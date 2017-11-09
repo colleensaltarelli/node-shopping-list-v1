@@ -28,6 +28,8 @@ app.get('/shopping-list', (req, res) => {
   res.json(ShoppingList.get());
 });
 
+// when the root of this router is called with GET, return
+// all current Recipes items
 app.get('/recipes', (req, res) => {
   res.json(Recipes.get());
 });
